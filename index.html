@@ -28,9 +28,9 @@
 
         const context = canvas.getContext("2d");
 
-        let numStars = 1500;
+        let numStars = 3000;
         const stars = [];
-        let speed = 5;
+        let speed = 8;
 
         let mouseX = canvas.width / 2;
         let mouseY = canvas.height / 2;
@@ -47,7 +47,7 @@
                 y,
                 z: Math.random() * canvas.width,
                 o: Math.random(),
-                size: Math.random() * 3 + 2 // Zufällige Größe zwischen 1 und 3
+                size: Math.random() * 3 + 2 // Zufällige Größe zwischen 3 und 6
             };
         }
 
