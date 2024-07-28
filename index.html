@@ -5,24 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Starfield Warp Animation</title>
-    <style>
-        body {
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: black;
-            overflow: hidden;
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
+    
 </head>
 
 <body>
     <canvas id="2dcanvas"></canvas>
-
+    <div class="legend">
+        <h3>Legende der Tastenkombinationen</h3>
+        <ul>
+            <li><strong>W:</strong> Erhöht die Geschwindigkeit um 1.</li>
+            <li><strong>S:</strong> Verringert die Geschwindigkeit um 1 </li>
+            <li><strong>NumPad +:</strong> Erhöht die Anzahl der Sterne.</li>
+            <li><strong>NumPad -:</strong> Verringert die Anzahl der Sterne.</li>
+        </ul>
+    </div>
     <script src="./sim.js">
-        
+
     </script>
 </body>
 
