@@ -6,7 +6,7 @@ const canvas = document.getElementById('2dcanvas');
 
         let numStars = 3000;
         const stars = [];
-        let speed = 8;
+        let speed = 1;
 
         let mouseX = canvas.width / 2;
         let mouseY = canvas.height / 2;
@@ -64,7 +64,7 @@ const canvas = document.getElementById('2dcanvas');
                     star.z = canvas.width;
                 }
 
-                const sx = (star.x - mouseX) * (canvas.width / star.z) + mouseX;
+                const sx = (star.x -mouseX) * (canvas.width / star.z) + mouseX;
                 const sy = (star.y - mouseY) * (canvas.width / star.z) + mouseY;
                 const size = (1 - star.z / canvas.width) * star.size;
                 context.fillStyle = "white";
